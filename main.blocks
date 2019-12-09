@@ -1,0 +1,78 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="p{{j`9.(Ou?={S_$Ay5D">mySprite</variable><variable type="KIND_SpriteKind" id="EV:?u*N=x=,=XT=_f!H8">Player</variable><variable type="KIND_SpriteKind" id="1.|@5M[tf4~Yg+zp+%u+">Projectile</variable><variable type="KIND_SpriteKind" id="Z6BkBa.xl:5FM/evBbqa">Food</variable><variable type="KIND_SpriteKind" id="#xcQD$@zWR*U^Ew:EWI/">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="gamesettilemap"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="map"><shadow type="tilemap_image_picker"><field name="img">img`
+7 7 7 f f f 7 7 7 7 
+f 7 7 7 7 f 7 7 7 f 
+f 7 7 7 7 7 7 7 f f 
+f f 7 7 7 7 7 f f f 
+7 f f 7 7 7 7 7 f f 
+7 7 7 7 7 f f 7 f f 
+7 f 7 7 7 7 f 7 7 7 
+f 7 7 7 7 f 7 7 7 7 
+`</field></shadow></value><next><block type="gamesettile"><value name="index"><shadow type="colorindexpicker"><field name="index">8</field></shadow></value><value name="img"><shadow type="tile_image_picker"><field name="img">img`
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 8 8 8 8 8 8 9 9 8 
+8 8 8 8 9 8 8 8 8 8 8 8 8 8 9 8 
+8 8 8 8 9 8 8 8 9 8 8 8 8 8 9 8 
+8 8 8 9 9 8 8 8 8 9 8 8 8 8 9 8 
+8 8 8 9 8 8 8 8 8 9 8 8 8 8 9 8 
+8 8 9 9 8 8 8 8 9 9 8 8 8 8 9 8 
+8 9 9 8 8 8 8 9 9 8 8 8 8 9 8 8 
+8 9 8 8 8 8 8 9 8 8 8 8 8 9 8 8 
+8 8 8 8 8 8 9 9 8 8 8 8 8 9 8 8 
+8 8 8 8 8 8 9 8 8 8 8 8 9 9 8 8 
+8 8 8 8 8 8 8 8 8 8 9 9 9 8 8 8 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+`</field></shadow></value><value name="wall"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value><next><block type="gamesettile"><value name="index"><shadow type="colorindexpicker"><field name="index">4</field></shadow></value><value name="img"><shadow type="tile_image_picker"><field name="img">img`
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+4 4 4 4 2 4 4 4 4 4 2 4 4 2 2 4 
+4 4 4 4 2 4 4 4 4 4 2 4 2 2 4 4 
+4 4 4 4 2 4 4 4 4 4 2 2 4 4 4 4 
+4 4 4 4 2 4 4 4 4 4 2 4 4 4 4 4 
+4 4 4 4 2 4 4 4 4 4 2 4 4 4 4 4 
+4 4 4 4 4 2 4 4 4 4 4 4 4 4 4 4 
+4 4 4 4 4 2 4 4 4 4 4 4 4 4 4 4 
+4 4 4 4 4 2 2 4 4 4 4 2 4 4 4 4 
+4 2 4 4 4 4 2 4 4 4 4 2 2 4 4 4 
+4 2 2 4 4 4 2 2 4 4 4 4 2 4 4 4 
+4 4 2 2 4 4 4 2 4 4 4 4 2 2 4 4 
+4 4 4 4 2 2 4 4 4 4 4 4 4 2 4 4 
+4 4 4 4 4 2 4 4 4 4 4 4 4 4 4 4 
+4 4 4 4 4 4 2 4 4 4 4 4 4 4 4 4 
+`</field></shadow></value><value name="wall"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value><next><block type="gamesettile"><value name="index"><shadow type="colorindexpicker"><field name="index">7</field></shadow></value><value name="img"><shadow type="tile_image_picker"><field name="img">img`
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 5 5 5 7 7 7 7 7 7 7 
+7 7 7 7 7 5 5 5 5 5 5 7 7 7 7 7 
+7 7 7 7 5 5 5 4 5 5 5 5 7 7 7 7 
+7 7 7 7 5 5 4 4 4 5 5 5 7 7 7 7 
+7 7 7 7 5 5 5 4 4 4 5 5 7 7 7 7 
+7 7 7 7 5 5 5 4 5 5 5 7 7 7 7 7 
+7 7 7 7 7 5 5 5 5 5 7 7 7 7 7 7 
+7 7 7 7 7 7 7 5 5 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+`</field></shadow></value><value name="wall"><shadow type="toggleOnOff"><field name="on">false</field></shadow></value><next><block type="variables_set"><field name="VAR" id="p{{j`9.(Ou?={S_$Ay5D">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . f f f f . . . . . . 
+. . . . . f 1 1 1 1 f . . . . . 
+. . . . f 1 1 1 1 1 1 f . . . . 
+. . . . f 1 1 1 1 1 1 f . . . . 
+. . . . f 1 f 1 1 f 1 f . . . . 
+. . . . f 1 1 1 1 1 1 f . . . . 
+. . . . f 1 1 1 1 1 1 f . . . . 
+. . . . . f 1 f f 1 f . . . . . 
+. . . . . . f f f f . . . . . . 
+. . . . . . f f f f . . . . . . 
+f f f f f f f f f f f f f f f f 
+f 1 f 1 f f . . . . f f 1 f 1 f 
+f f f f f . . . . . . f f f f f 
+. f . f . . . . . . . . f . f . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></next></block></next></block></next></block></statement></block></xml>
