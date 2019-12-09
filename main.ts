@@ -1,3 +1,4 @@
+let duck: Sprite = null
 scene.setTileMap(img`
 7 7 7 f f f 7 7 7 7 
 f 7 7 7 7 f 7 7 7 f 
@@ -80,3 +81,25 @@ f f f f f . . . . . . f f f f f
 . f . f . . . . . . . . f . f . 
 . . . . . . . . . . . . . . . . 
 `, SpriteKind.Player)
+controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
+for (let index = 0; index < 40; index++) {
+    duck = sprites.create(img`
+. . . . . . . . . . . . . . . . 
+. . . f f f f f f f f f f . . . 
+. . f 5 5 5 5 5 5 5 5 5 5 f . . 
+. f f 5 5 5 5 5 5 5 5 5 5 f f . 
+f f . 5 f 5 5 5 5 5 5 f 5 . f f 
+f . . 5 f 5 5 f f 5 5 f 5 . . f 
+f . . . . . f f f f . . . . . f 
+f . . . . . f . . f . . . . . f 
+f . . . f f f . . f f f . . . f 
+f . f f f . . . . . . f f f . f 
+f . f . . . f . . f . . . f . f 
+f . f f . . . . . . . . f f . f 
+f f . f f . . . . . . f f . f f 
+. f f . f f f f f f f f . f f . 
+. . f f . . . . . . . . f f . . 
+. . . f f f f f f f f f f . . . 
+`, SpriteKind.Food)
+}
